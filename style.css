@@ -103,7 +103,6 @@ form input {
 .exp-info .info {
     display: flex;
     flex-direction: column;
-    flex-shrink: 7;
 }
 
 .exp-input {
@@ -112,6 +111,7 @@ form input {
 }
 
 .cvc-input {
+    display: flex;
     width: 93%;
 }
 
@@ -129,3 +129,43 @@ button {
     letter-spacing: 0;
 }
 
+@media screen and (min-width: 992px) {
+    .container {
+        flex-direction: row;
+        height: 100vh;
+        gap: 20rem;
+    }
+
+    .card-info {
+        font-size: 1.7em;
+    }
+
+    .card-back {
+        width: 22rem;
+        height: 12rem;
+        top: 23rem;
+        left: 15rem;
+        padding-top: 1.3rem;
+        padding-right: .5rem;
+    }
+
+    .card-front {
+        width: 20rem;
+        height: 10rem;
+        top: -7rem;
+        left: 7rem;
+    }
+
+    .card-back, .card-front{
+        -webkit-box-shadow: 12px 14px 29px 0px rgba(0,0,0,0.42); 
+        box-shadow: 12px 14px 29px 0px rgba(0,0,0,0.42);
+    }
+
+    form {
+        margin-top: 10rem;
+    }
+
+    .attribution {
+        display: none;
+    }
+}

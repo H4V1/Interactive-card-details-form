@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 3px;
+    font-size: .8em;
+}
+
+::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-front {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 3rem;
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 15rem;
+    padding: 1.5rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    font-size: .9em;
+}
+
+.graphics {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.white-circle, .small-circle {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.small-circle {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+}
+
+.card-back {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 16rem;
+    height: 9rem;
+    position: relative;
+    left: 7rem;
+    top: 2.5rem;
+}
+
+.card-back p {
+    padding-right: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+form {
+    width: 90%;
+    margin: 1rem;
+    color: hsl(278, 68%, 11%);
+}
+
+form input {
+    width: 90%;
+    padding: .5rem; 
+}
+
+.exp-info {
+    display: flex;
+    gap: .5rem;
+}
+
+.exp-info .info {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 7;
+}
+
+.exp-input {
+    display: flex;
+    gap: .5rem;
+}
+
+.cvc-input {
+    width: 93%;
+}
+
+button {
+    padding: 1rem;
+    margin-top: 1.109rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+
+.attribution {
+    font-size: 10px;
+    letter-spacing: 0;
+}
+
